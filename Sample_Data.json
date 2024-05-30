@@ -1,0 +1,387 @@
+[
+    {
+        "tokenized_text": ["John", "Doe", ",", "Senior", "Manager", "at", "XYZ", "Corp", "."],
+        "ner": [
+            [3, 4, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text":["Jane", "Smith", "is", "a", "CTO", "at", "XYZ", "Corp", "."],
+        "ner": [
+            [4,"DESIGNATION"]
+
+        ]
+    },
+    {
+        "tokenized_text":["Jane Doe", "is", "the", "CEO", "of", "XYZ" ,"Corp", "."],
+        "ner":[
+            [3,"DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Jane", "Smith", "is", "the", "Chief", "Financial", "Officer", "at", "ABC", "Company", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Dr.", "Michael", "Johnson", "serves", "as", "the", "Head", "of", "Research", "at", "XYZ", "Corporation", "."],
+        "ner": [
+            [6, 8, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Sarah", "Davis", "works", "as", "a", "Senior", "Software", "Engineer", "at", "Tech", "Solutions", "."],
+        "ner": [
+            [5, 7, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["David", "Brown", "is", "the", "Marketing", "Director", "at", "Global", "Enterprises", "."],
+        "ner": [
+            [4, 5, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Alex", "Chen", "serves", "as", "the", "Vice", "President", "of", "Operations", "at", "Tech", "Innovations", "."],
+        "ner": [
+            [5, 8, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Emily", "Roberts", "is", "a", "Project", "Manager", "at", "ABC", "Consulting", "Firm", "."],
+        "ner": [
+            [4, 5, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Michael", "Scott", ",", "Regional", "Manager", "at", "Dunder", "Mifflin", "."],
+        "ner": [
+            [3, 4, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Pam", "Beesly", ",", "Office", "Administrator", "at", "Dunder", "Mifflin", "."],
+        "ner": [
+            [3, 4, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Jim", "Halpert", ",", "Sales", "Representative", "at", "Dunder", "Mifflin", "."],
+        "ner": [
+            [3, 4, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Dwight", "Schrute", ",", "Assistant", "to", "the", "Regional", "Manager", "at", "Dunder", "Mifflin", "."],
+        "ner": [
+            [3, 8, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Angela", "Martin", ",", "Head", "of", "Accounting", "at", "Dunder", "Mifflin", "."],
+        "ner": [
+            [3, 5, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Oscar", "Martinez", ",", "Accountant", "at", "Dunder", "Mifflin", "."],
+        "ner": [
+            [3, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Stanley", "Hudson", ",", "Sales", "Representative", "at", "Dunder", "Mifflin", "."],
+        "ner": [
+            [3, 4, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Phyllis", "Vance", ",", "Sales", "Representative", "at", "Dunder", "Mifflin", "."],
+        "ner": [
+            [3, 4, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Ryan", "Howard", ",", "Temp", "at", "Dunder", "Mifflin", "."],
+        "ner": [
+            [3,  "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Kelly", "Kapoor", ",", "Customer", "Service", "Representative", "at", "Dunder", "Mifflin", "."],
+        "ner": [
+            [3, 5, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Creed", "Bratton", ",", "Quality", "Assurance", "Director", "at", "Dunder", "Mifflin", "."],
+        "ner": [
+            [3, 5, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": []
+    },
+    {
+        "tokenized_text": ["Jennifer", "Lopez", "is", "the", "Chief", "Executive", "Officer", "at", "ABC", "Enterprises", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Robert", "Johnson", "works", "as", "the", "Chief", "Technology", "Officer", "at", "Tech", "Solutions", "."],
+        "ner": [
+            [5, 7, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Maria", "Garcia", "is", "a", "Senior", "Financial", "Analyst", "at", "Finance", "Corp", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Daniel", "Brown", "is", "the", "Managing", "Director", "at", "Global", "Investments", "."],
+        "ner": [
+            [4, 5, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Sarah", "Johnson", "serves", "as", "the", "Director", "of", "Human", "Resources", "at", "Tech", "Solutions", "."],
+        "ner": [
+            [5, 8, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Jonathan", "Smith", "is", "the", "Lead", "Software", "Engineer", "at", "Software", "Innovations", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Rebecca", "Taylor", "is", "the", "Project", "Manager", "at", "Tech", "Enterprises", "."],
+        "ner": [
+            [4, 5, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Christopher", "Lee", "is", "the", "Chief", "Financial", "Officer", "at", "Finance", "Solutions", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Julia", "Walker", "serves", "as", "the", "Vice", "President", "of", "Marketing", "at", "Tech", "Innovations", "."],
+        "ner": [
+            [5, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Eric", "Clark", "is", "the", "Senior", "Consultant", "at", "Global", "Consulting", "Group", "."],
+        "ner": [
+            [4, 5, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Jessica", "Miller", "is", "the", "Director", "of", "Operations", "at", "Tech", "Solutions", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Andrew", "Wilson", "serves", "as", "the", "Chief", "Operating", "Officer", "at", "Global", "Enterprises", "."],
+        "ner": [
+            [5, 7, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Laura", "Gonzalez", "is", "the", "Head", "of", "Marketing", "at", "ABC", "Enterprises", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Mark", "Robinson", "is", "a", "Senior", "Project", "Manager", "at", "Tech", "Innovations", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Rachel", "White", "is", "the", "Vice", "President", "of", "Finance", "at", "Global", "Finance", "."],
+        "ner": [
+            [4, 5, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Christopher", "Smith", "is", "the", "Director", "of", "Research", "at", "Tech", "Enterprises", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Stephanie", "Jones", "works", "as", "the", "Head", "of", "Human", "Resources", "at", "ABC", "Corp", "."],
+        "ner": [
+            [5, 8, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Nathan", "Baker", "is", "the", "Lead", "Software", "Engineer", "at", "Software", "Solutions", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Catherine", "Hill", "is", "the", "Chief", "Marketing", "Officer", "at", "Marketing", "Solutions", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Aaron", "Adams", "serves", "as", "the", "Senior", "Financial", "Analyst", "at", "Global", "Finance", "."],
+        "ner": [
+            [5, 7, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Samantha", "Wright", "is", "the", "Chief", "Technology", "Officer", "at", "Tech", "Enterprises", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Tyler", "Adams", "works", "as", "the", "Director", "of", "Product", "Development", "at", "Global", "Solutions", "."],
+        "ner": [
+            [5, 8, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Vanessa", "Young", "is", "the", "Vice", "President", "of", "Operations", "at", "ABC", "Enterprises", "."],
+        "ner": [
+            [4, 7, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Ethan", "Mitchell", "is", "a", "Senior", "Software", "Engineer", "at", "Software", "Innovations", "."],
+        "ner": [
+            [5, 7, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Madison", "Hill", "serves", "as", "the", "Lead", "Financial", "Analyst", "at", "Finance", "Corp", "."],
+        "ner": [
+            [5, 7, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Gabriel", "Russell", "is", "the", "Director", "of", "Marketing", "at", "Tech", "Solutions", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Olivia", "Garcia", "is", "the", "Chief", "Operating", "Officer", "at", "Global", "Tech", "Corp", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Lucas", "Wang", "is", "the", "Senior", "Project", "Manager", "at", "Software", "Innovations", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Hailey", "Fisher", "is", "the", "Vice", "President", "of", "Finance", "at", "Global", "Enterprises", "."],
+        "ner": [
+            [4, 5, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Mason", "Taylor", "serves", "as", "the", "Lead", "Software", "Engineer", "at", "Tech", "Solutions", "."],
+        "ner": [
+            [5, 7, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Sophia", "Adams", "is", "the", "Director", "of", "Human", "Resources", "at", "ABC", "Enterprises", "."],
+        "ner": [
+            [4, 7, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Jackson", "Evans", "works", "as", "the", "Chief", "Financial", "Officer", "at", "Finance", "Solutions", "."],
+        "ner": [
+            [5, 7, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Emma", "Foster", "is", "a", "Senior", "Project", "Manager", "at", "Tech", "Innovations", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Noah", "Bailey", "is", "the", "Vice", "President", "of", "Marketing", "at", "Global", "Solutions", "."],
+        "ner": [
+            [4, 7, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Ava", "Cooper", "serves", "as", "the", "Lead", "Software", "Engineer", "at", "Software", "Innovations", "."],
+        "ner": [
+            [5, 7, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Liam", "Reed", "is", "the", "Senior", "Financial", "Analyst", "at", "Finance", "Corp", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Charlotte", "Bennett", "is", "the", "Director", "of", "Operations", "at", "Tech", "Enterprises", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["William", "Hayes", "works", "as", "the", "Chief", "Technology", "Officer", "at", "Tech", "Solutions", "."],
+        "ner": [
+            [5, 7, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Amelia", "Sullivan", "is", "the", "Vice", "President", "of", "Operations", "at", "Global", "Enterprises", "."],
+        "ner": [
+            [4, 7, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["James", "Baker", "is", "the", "Lead", "Project", "Manager", "at", "ABC", "Solutions", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Ella", "Cole", "is", "the", "Director", "of", "Marketing", "at", "Tech", "Innovations", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Henry", "Gordon", "works", "as", "the", "Chief", "Operating", "Officer", "at", "Global", "Solutions", "."],
+        "ner": [
+            [5, 7, "DESIGNATION"]
+        ]
+    },
+    {
+        "tokenized_text": ["Stella", "Parker", "is", "a", "Senior", "Software", "Engineer", "at", "Software", "Solutions", "."],
+        "ner": [
+            [4, 6, "DESIGNATION"]
+        ]
+    }
+]
+
+
+
