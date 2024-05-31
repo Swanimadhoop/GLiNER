@@ -11,9 +11,9 @@ import warnings
 
 # Configuration for GLiNER integration
 custom_spacy_config = {
-    "gliner_model": "small",
+    "gliner_model": "m_news",
     "chunk_size": 250,
-    "labels": ["PERSON","ORGANISATION", "EMAIL", "ADDRESS", "PHONE NUMBER","PIN NUMBER", "DESIGNATION"],
+    "labels": ["PERSON","ORGANISATION","PHONE NUMBER", "EMAIL", "ADDRESS","DESIGNATION"],
     "style": "ent",
     "threshold": 0.3
 }
@@ -21,7 +21,7 @@ custom_spacy_config = {
 # Initialize a blank English spaCy pipeline and add GLiNER
 nlp = spacy.blank("en")
 nlp.add_pipe("gliner_spacy", config=custom_spacy_config)
-trained_model=GLiNER.from_pretrained("small", local_files_only=True)
+trained_model=GLiNER.from_pretrained("m_news", local_files_only=True)
 
 
 
@@ -49,8 +49,8 @@ nlp.add_pipe("custom_ner_component", after="gliner_spacy")
 # Example text for entity detection
 text = """
 CVinodhkumar
-CTO
-+919744172744
+Manager
++91 9744172744
 Muthoottu
 vinodhkumar.c@muthoottumini.com
 www.muthoottumini.com
