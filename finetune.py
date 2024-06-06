@@ -1,6 +1,6 @@
 import spacy
 import json
-train_path = "Sample_Data.json"
+train_path = "gliner_sample_data.json"
 
 with open(train_path, "r") as f:
     data = json.load(f)
@@ -12,13 +12,16 @@ from gliner import GLiNER
 # install accelerate and beartype if not already done
 from trainer import GlinerTrainer
  
-model = GLiNER.from_pretrained("EmergentMethods/gliner_medium_news-v2.1")
+# model = GLiNER.from_pretrained("EmergentMethods/gliner_medium_news-v2.1")
+model = GLiNER.from_pretrained("urchade/gliner_small")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu") 
 model = model.to(device)
 eval_data = {
-    "entity_types": ["DESIGNAION"],
-    "samples": data[:50]
+    # "entity_types": ["DESIGNAION","ORGANISATION"],
+    "entity_types": ["invoice number"],
+
+    "samples": data[:800]
 }
 
 trainer = GlinerTrainer(model, 
@@ -40,9 +43,9 @@ trainer = GlinerTrainer(model,
 
 
 trainer.train(num_epochs=50) # Or by steps: trainer.train(num_steps=50)
-output_dir = "m_news"
+output_dir = "invoice"
 trainer.model.save_pretrained(output_dir)
-md = GLiNER.from_pretrained("m_news", local_files_only=True)
+md = GLiNER.from_pretrained("invoice", local_files_only=True)
 
 
 

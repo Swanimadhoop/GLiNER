@@ -49,7 +49,7 @@ nlp.add_pipe("custom_ner_component", after="gliner_spacy")
 # Example text for entity detection
 text = """
 CVinodhkumar
-Manager
+Senior Manager
 +91 9744172744
 Muthoottu
 vinodhkumar.c@muthoottumini.com

@@ -1,8 +1,8 @@
 [
     {
-        "tokenized_text": ["John", "Doe", ",", "Senior", "Manager", "at", "XYZ", "Corp", "."],
+        "tokenized_text": ["John", "Doe", ",", "Senior", "Manager", "at", "muthootu", "."],
         "ner": [
-            [3, 4, "DESIGNATION"]
+            [3, 4, "DESIGNATION"],[6,"ORGANISATION"]
         ]
     },
     {

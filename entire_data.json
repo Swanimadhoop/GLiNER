@@ -1,0 +1,46 @@
+[
+    {
+      "tokenized_text": ["CVinodhkumar", "CTO", "+919744172744", "Muthoottu", "vinodhkumar.c@muthoottumini.com", "www.muthoottumini.com", "Muthoottu Royal Tower, Kaloor", "Cochin", "Kerala-682017"],
+      "ner": [
+        [0, 0, "PERSON"],   
+        [1, 1, "DESIGNATION"], 
+        [2, 2, "PHONENUMBER"],  
+        [3, 3, "ORGANISATION"], 
+        [4, 4, "EMAILADDRESS"], 
+        [5, 5, "WEBSITE"],      
+        [6, 7, "ADDRESS"],
+        [8, 8, "PIN NUMBER"]      
+      ]
+    },
+    {
+      "tokenized_text":["Ketan","Puranik","Senior", "Manager", "-", "Risk"," Operations","+91 80974 43140","Credable","ketan.puranik@credable.in","www.credable.in","5th Floor", "Satyom Tower", "Oll Govandi Station Road","Deonar", "Govandi East","Mumbai","400 088"],
+      "ner": [
+        [0, 1, "PERSON"],
+        [2, 6, "DESIGNATION"],
+        [7, 7, "PHONENUMBER"],
+        [8, 8, "ORGANISATION"],
+        [9, 9, "EMAILADDRESS"],
+        [10, 10, "WEBSITE"],
+        [11, 16, "ADDRESS"],
+        [17,17, "PIN NUMBER"]
+      ]
+    },
+    {
+        "tokenized_text":["Nikhil","E.V",".",
+        "Mobile",":","9400999030",
+        "nikhil.ev@keralagbank.com",
+        "Kerala","Gramin","Bank",".",
+        "A","Scheduled","Bank",",","Established","by","Govt.","of","India",",","Sponsored","by","Canara","Bank",
+        "Canara","Bank","RRB","CBs","Project","Office"
+        ,"19-19/1",",","3rd","Floor",",","Above","Canara","Bank",
+        "Regional","Office","South",",","South","End","Road.",
+        "Basavanagudi",",","Bengaluru","-","560004"],
+        "ner":[
+            [0,2, "PERSON"],
+            [5,"PHONENUMBER"],
+            [6,"EMAILADDRESS"],
+            []
+        ]
+
+    }
+]
