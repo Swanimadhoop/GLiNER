@@ -48,6 +48,7 @@ nlp.add_pipe("custom_ner_component", after="gliner_spacy")
 
 # Example text for entity detection
 text = """
+<<<<<<< HEAD
 CVinodhkumar
 Senior Manager
 +91 9744172744
@@ -56,6 +57,16 @@ vinodhkumar.c@muthoottumini.com
 www.muthoottumini.com
 Muthoottu Royal Tower, Kaloor
 Cochin, Kerala-682017
+=======
+CVxxxxxxxr
+Maxxxxxxer
++91 97xxxxxx4
+Mxxxxxxxu
+vxxxxxxar.c@muxxxxxxi.com
+www.mutxxxxxxni.com
+Muxxxxxxu Rxxxal Tower, Kxxxr
+Cochin, Kerala-68xxxxx
+>>>>>>> 948100fb08760b5b3e4b1428bd3847ce97158aaf
 """
 
 # Process the text with the pipeline
