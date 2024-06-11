@@ -15,18 +15,17 @@ warnings.filterwarnings("ignore", message="`resume_download` is deprecated and w
 custom_spacy_config = {
     "gliner_model": "small",
     "chunk_size": 250,
-    "labels": ["PERSON", "ORGANISATION", "EMAIL", "ADDRESS", "PHONE NUMBER","DESIGNATION"],
-    # "labels": ["ORGANISATION"],
+    "labels": ["PERSON","ORGANISATION","PHONE NUMBER", "EMAIL", "ADDRESS","DESIGNATION"],
     # "labels": ["DESIGNATION"],
+    # "labels": ["ORGANISATION"],
     "style": "ent",
-    "threshold": 0.3
+    "threshold": 0.1
 }
 
 # Initialize a blank English spaCy pipeline and add GLiNER
 nlp = spacy.blank("en")
 nlp.add_pipe("gliner_spacy", config=custom_spacy_config)
 trained_model = GLiNER.from_pretrained("small", local_files_only=True)
-
 
 # Define a custom component for email and URL detection
 @Language.component("custom_ner_component")
@@ -54,15 +53,20 @@ nlp.add_pipe("custom_ner_component", after="gliner_spacy")
 
 # Example text for entity detection
 text = """
-MM SoftTech
-Muthoottu Infotech Pvt Ltd.
-Jose Sebastian E
-CTO
-65/623 K, Muthoottu Royal Tower,
-Kaloor, Kochi, Kerala - 682 017
-Mob: 98468 70514
-e-mail: jose.sebastian@mmsofttech.com
-www.mmsofttech.com
+HIGH
+3inba
+as
+ACHIEVERS
+CLUBFY2023-24
+Equitas SmallFinance Bank
+Shanmugam Manivannan
+National Manager
+Equitas Small Finance Bank Limited
++919962510100
+401A,IVFloor,Spencer Plaza,Phasel,
+shanmugamm2@equitasbank.com
+769 Anna Salai,Chennai-600002
+www.equitasbank.com
 """
 
 start_time = time.time()
@@ -94,9 +98,12 @@ if current_address:
 for entity in consolidated_entities:
     print(f"{entity['text']} => {entity['label']}")
 
+
+
 inference_time = time.time() - start_time
 
 print("Inference time:", inference_time, "seconds")
+
 
 # # Output detected entities
 # for ent in doc.ents:

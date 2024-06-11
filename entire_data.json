@@ -13,34 +13,688 @@
       ]
     },
     {
-      "tokenized_text":["Ketan","Puranik","Senior", "Manager", "-", "Risk"," Operations","+91 80974 43140","Credable","ketan.puranik@credable.in","www.credable.in","5th Floor", "Satyom Tower", "Oll Govandi Station Road","Deonar", "Govandi East","Mumbai","400 088"],
+      "tokenized_text": [
+          "Ketan", "Puranik", "Senior", "Manager", "-", "Risk", "Operations", "+91 80974 43140", 
+          "Credable", "ketan.puranik@credable.in", "www.credable.in", "5th Floor", 
+          "Satyom Tower", "Oll Govandi Station Road", "Deonar", "Govandi East", 
+          "Mumbai", "400 088"
+      ],
       "ner": [
-        [0, 1, "PERSON"],
-        [2, 6, "DESIGNATION"],
-        [7, 7, "PHONENUMBER"],
-        [8, 8, "ORGANISATION"],
-        [9, 9, "EMAILADDRESS"],
-        [10, 10, "WEBSITE"],
-        [11, 16, "ADDRESS"],
-        [17,17, "PIN NUMBER"]
+          [0, 1, "PERSON"],
+          [2, 6, "DESIGNATION"],
+          [7, 7, "PHONENUMBER"],
+          [8, 8, "ORGANISATION"],
+          [9, 9, "EMAILADDRESS"],
+          [10, 10, "WEBSITE"],
+          [11, 11, "ADDRESS"],  
+          [12, 12, "ADDRESS"],  
+          [13, 13, "ADDRESS"],  
+          [14, 14, "ADDRESS"],  
+          [15, 15, "ADDRESS"],  
+          [16, 16, "ADDRESS"],  
+          [17, 17, "PIN NUMBER"]
       ]
-    },
-    {
-        "tokenized_text":["Nikhil","E.V",".",
-        "Mobile",":","9400999030",
+  },
+  {
+    "tokenized_text": [
+        "Nikhil", "E.V", ".",
+        "Mobile", ":", "9400999030",
         "nikhil.ev@keralagbank.com",
-        "Kerala","Gramin","Bank",".",
-        "A","Scheduled","Bank",",","Established","by","Govt.","of","India",",","Sponsored","by","Canara","Bank",
-        "Canara","Bank","RRB","CBs","Project","Office"
-        ,"19-19/1",",","3rd","Floor",",","Above","Canara","Bank",
-        "Regional","Office","South",",","South","End","Road.",
-        "Basavanagudi",",","Bengaluru","-","560004"],
-        "ner":[
-            [0,2, "PERSON"],
-            [5,"PHONENUMBER"],
-            [6,"EMAILADDRESS"],
-            []
-        ]
+        "Kerala", "Gramin", "Bank", ".",
+        "A", "Scheduled", "Bank", ",", "Established", "by", "Govt.", "of", "India", ",", "Sponsored", "by", "Canara", "Bank",
+        "Canara", "Bank", "RRB", "CBs", "Project", "Office",
+        "19-19/1", ",", "3rd", "Floor", ",", "Above", "Canara", "Bank",
+        "Regional", "Office", "South", ",", "South", "End", "Road.",
+        "Basavanagudi", ",", "Bengaluru", "-", "560004"
+    ],
+    "ner": [
+        [0, 2, "PERSON"],
+        [5, 5, "PHONE NUMBER"],
+        [6, 6, "EMAIL"],
+        [7, 9, "ORGANISATION"],
+        [23, 24, "ORGANISATION"],
+        [25, 25, "ORGANISATION"],
+        [28, 29, "ORGANISATION"],
+        [30, 31, "ORGANISATION"],
+        [32, 32, "ADDRESS"],  
+        [34, 35, "ADDRESS"],  
+        [37, 39, "ADDRESS"],  
+        [40, 43, "ADDRESS"],  
+        [45, 47, "ADDRESS"],  
+        [48, 48, "ADDRESS"],  
+        [50, 51, "ADDRESS"]   
+    ]
+  },
+  {
+    "tokenized_text": [
+        "CVinodhkumar", "CTO", "+919744172744", "Muthoottu", 
+        "vinodhkumar.c@muthoottumini.com", "www.muthoottumini.com", 
+        "Muthoottu Royal Tower, Kaloor", "Cochin", "Kerala-682017"
+    ],
+    "ner": [
+        [0, 0, "PERSON"],
+        [1, 1, "DESIGNATION"],
+        [2, 2, "PHONENUMBER"],
+        [3, 3, "ORGANISATION"],
+        [4, 4, "EMAILADDRESS"],
+        [5, 5, "WEBSITE"],
+        [6, 6, "ADDRESS"],  
+        [7, 7, "ADDRESS"],  
+        [8, 8, "PIN NUMBER"]
+    ]
+},
+{
+  "tokenized_text": [
+      "IDBI", "BANK",
+      "P.", "K.", "Muralidharan", "Nair.",
+      "General", "Manager",
+      "Digital", "Banking", "&", "Emerging", "Payments",
+      "IDBIBank", "Ltd.",
+      "Intech", "Building,", "ATM", "Command", "Center,",
+      "Mobile", "No.:8419927733",
+      "Ground", "Floor,", "Plot", "No.", "39/40/41,",
+      "Sector", "11,", "CBD", "Belapur,",
+      "Landline:", "022", "6128", "2142",
+      "Email", "Id:", "muralinair@idbi.co.in",
+      "Navi", "Mumbai-400614",
+      "Website", ":", "www.idbibank.in;", "www.facebook.com/lDBlBank;", "www.twitter.com/idbi_bank"
+  ],
+  "ner": [
+      [0, 1, "ORGANISATION"], 
+      [2, 5, "PERSON"], 
+      [6, 9, "DESIGNATION"], 
+      [11, 12, "DESIGNATION"],
+      [13, 14, "ORGANISATION"],
+      [15, 19, "ADDRESS"],  
+      [21, 21, "PHONENUMBER"],
+      [22, 27, "ADDRESS"], 
+      [28, 30, "ADDRESS"], 
+      [32, 35, "PHONENUMBER"],
+      [37, 37, "EMAILADDRESS"],
+      [38, 39, "ADDRESS"], 
+      [41, 41, "WEBSITE"], 
+      [42, 42, "WEBSITE"], 
+      [43, 43, "WEBSITE"] 
+  ]
+},
+{
+  "tokenized_text": [
+      "HIGH", "3inba", "as", "ACHIEVERS", "CLUBFY2023-24",
+      "Equitas", "SmallFinance", "Bank",
+      "Shanmugam", "Manivannan",
+      "National", "Manager",
+      "Equitas", "Small", "Finance", "Bank", "Limited",
+      "+919962510100",
+      "401A,", "IV", "Floor,", "Spencer", "Plaza,", "Phasel,",
+      "shanmugamm2@equitasbank.com",
+      "769", "Anna", "Salai,", "Chennai-600002",
+      "www.equitasbank.com"
+  ],
+  "ner": [
+      [5, 7, "ORGANISATION"],
+      [8, 9, "PERSON"], 
+      [10, 11, "DESIGNATION"], 
+      [12, 16, "ORGANISATION"],
+      [17, 17, "PHONENUMBER"], 
+      [18, 19, "ADDRESS"], 
+      [20, 22, "ADDRESS"], 
+      [23, 23, "EMAILADDRESS"],
+      [24, 27, "ADDRESS"], 
+      [28, 28, "WEBSITE"] 
+  ]
+},
+{
+  "tokenized_text": [
+      "IDBI", "BANK",
+      "P.", "K.", "Muralidharan", "Nair",
+      "General", "Manager",
+      "Digital", "Banking", "&", "Emerging", "Payments",
+      "IDBI", "Bank", "Ltd.,",
+      "Intech", "Building,", "ATM", "Command", "Center,", "Ground", "Floor,", "Plot", "No.", "39/40/41,",
+      "Mobile", "No.:", "8419927733",
+      "Sector", "11,", "CBD", "Belapur,",
+      "Landline:", "022", "6128", "2142",
+      "Navi", "Mumbai-400614",
+      "Email", "Id:", "muralinair@idbi.co.in",
+      "Website", ":", "www.idbibank.in;", "www.facebook.com/IDBIBank;", "www.twitter.com/idbi_bank"
+  ],
+  "ner": [
+      [0, 1, "ORGANISATION"], 
+      [2, 5, "PERSON"],  
+      [6, 7, "DESIGNATION"], 
+      [8, 12, "DESIGNATION"], 
+      [13, 15, "ORGANISATION"],
+      [16, 26, "ADDRESS"], 
+      [28, 28, "PHONENUMBER"], 
+      [29, 33, "ADDRESS"], 
+      [35, 38, "PHONENUMBER"], 
+      [39, 40, "ADDRESS"], 
+      [42, 42, "EMAILADDRESS"],
+      [44, 44, "WEBSITE"],
+      [45, 45, "WEBSITE"],
+      [46, 46, "WEBSITE"] 
+  ]
+},
+{
+  "tokenized_text": [
+      "Tel.", "(Hos):", "+91", "22", "2417", "7000",
+      "Ext", ":", "6101/6102",
+      "Mob", ":", "9869372120",
+      "Email:", "sawakaress@@tme.gov.in",
+      "Dr.", "Sandeep", "Sawakare",
+      "MEDICAL", "SUPERINTENDENT",
+      "TATA", "MEMORIAL", "HOSPITAL",
+      "(Tata", "Memorial", "Centre)",
+      "A", "GRANT-IN-AID", "INSTITUTE", "OF", "THE", "DEPARTMENT", "OF", "ATOMIC", "ENERGY,",
+      "GOVERNMENT", "OF", "INDIA",
+      "Dr.", "Ernest", "Borges", "Marg,", "Parei,", "Mumbai", "-", "400", "012.", "INDIA",
+      "Website", ":", "http://tmc.gov.in"
+  ],
+  "ner": [
+      [2, 5, "PHONENUMBER"], 
+      [7, 9, "PHONENUMBER"], 
+      [11, 11, "PHONENUMBER"], 
+      [13, 13, "EMAILADDRESS"],
+      [14, 16, "PERSON"], 
+      [17, 18, "DESIGNATION"], 
+      [19, 21, "ORGANISATION"],
+      [22, 24, "ORGANISATION"],
+      [25, 32, "DESCRIPTION"], 
+      [33, 35, "ORGANISATION"],
+      [36, 41, "ADDRESS"], 
+      [43, 43, "WEBSITE"] 
+  ]
+},
+{
+  "tokenized_text": [
+      "CSB", "Bank",
+      "Trusted", "Heritage", "Smart", "Future",
+      "Vijayan", "T",
+      "Vice", "President", "(Operations", "&", "M",
+      "Ananth", "Babu",
+      "Head", "-", "Cards,", "Payments", "&", "Contact", "Centre",
+      "S", "+91", "9820253032",
+      "8", "ananthbabu@csb.co.in",
+      "9", "CSB", "Bank", "Ltd",
+      "3rd", "Floor,", "Siroya", "Centre,", "Sahar", "Airport", "Road", "Andhen", "East.", "Mumbai", "-", "400099",
+      "©", "www.csb.co.in"
+  ],
+  "ner": [
+      [0, 1, "ORGANISATION"], 
+      [6, 7, "PERSON"], 
+      [8, 12, "DESIGNATION"], 
+      [13, 14, "PERSON"], 
+      [15, 21, "DESIGNATION"], 
+      [23, 23, "PHONENUMBER"], 
+      [25, 25, "EMAILADDRESS"],
+      [27, 30, "ORGANISATION"],
+      [31, 31, "ADDRESS"],
+      [32, 32, "ADDRESS"],
+      [33, 36, "ADDRESS"],
+      [37, 38, "ADDRESS"],
+      [39, 41, "ADDRESS"],
+      [43, 43, "WEBSITE"] 
+  ]
+},
+{
+  "tokenized_text": [
+      "S.", "PREMAR",
+      "Assistant", "General", "Manager",
+      "MUTHOOT",
+      "MERCANTILE",
+      "Muthoot", "Mercantile", "Limited",
+      "(A", "Unit", "of", "Mathoer", "Ninen", "Growp)",
+      "Regd.", "Office:", "MUTHOOT", "FLOORS,", "Opp.", "W&", "C", "Hospital,", "Thycaud", "Thiruvananthapuram-695", "014,", "Kerala,", "Phone:", "0471-2774800",
+      "Mob:", "9778402940", "e-mail:", "agm@muthootenterprises.com",
+      "www.muthootenterprises.com"
+  ],
+  "ner": [
+      [0, 1, "PERSON"], 
+      [2, 4, "DESIGNATION"], 
+      [5, 5, "ORGANISATION"], 
+      [6, 6, "ORGANISATION"], 
+      [7, 9, "ORGANISATION"], 
+      [10, 15, "DESCRIPTION"],
+      [17, 18, "ADDRESS"],  
+      [19, 23, "ADDRESS"],  
+      [24, 25, "ADDRESS"],  
+      [26, 27, "ADDRESS"],  
+      [29, 29, "PHONENUMBER"],
+      [31, 31, "PHONENUMBER"],
+      [33, 33, "EMAILADDRESS"],
+      [34, 34, "WEBSITE"] 
+  ]
+},
+{
+  "tokenized_text": [
+      "MM", "SoftTech",
+      "Muthoottu", "Infotech", "Pvt", "Ltd.",
+      "Jose", "Sebastian", "E",
+      "CEO",
+      "65/623", "K,", "Muthoottu", "Royal", "Tower,",
+      "Kaloor,", "Kochi,", "Kerala", "-", "682", "017",
+      "Mob:", "98468", "70514",
+      "e-mail:", "jose.sebastian@mmsofttech.com",
+      "www.mmsofttech.com"
+  ],
+  "ner": [
+      [0, 1, "ORGANISATION"], 
+      [2, 6, "ORGANISATION"], 
+      [7, 9, "PERSON"], 
+      [10, 10, "DESIGNATION"],
+      [11, 20, "ADDRESS"], 
+      [21, 21, "PHONENUMBER"],
+      [23, 23, "EMAILADDRESS"],
+      [24, 24, "WEBSITE"] 
+  ]
+},
+{
+  "tokenized_text": [
+      "FACT",
+      "S.", "SAKTHIMANI",
+      "Director", "(Finance)",
+      "THE", "FERTILISERS", "AND", "CHEMICALS", "TRAVANCORE", "LIMITED",
+      "(A", "Government", "of", "India", "Enterprise)",
+      "Corporate", "Office",
+      "Udyogamandal", "-", "683", "501,", "Kochi,", "Kerala,", "India",
+      "FOLLOW", "US", "ON:",
+      "Tel:", "Off:", "+91", "484", "2545030",
+      "www.fact.co.in",
+      "@df@actitd.com"
+  ],
+  "ner": [
+      [0, 0, "ORGANISATION"], 
+      [1, 2, "PERSON"], 
+      [3, 4, "DESIGNATION"], 
+      [5, 10, "ORGANISATION"],
+      [11, 12, "DESCRIPTION"],
+      [14, 24, "ADDRESS"],  
+      [28, 29, "PHONENUMBER"],
+      [31, 31, "WEBSITE"],  
+      [32, 32, "EMAILADDRESS"]
+  ]
+},
+{
+  "tokenized_text": [
+      "Ilamparithi", "J",
+      "Chief", "Product", "Officer",
+      "©", "WSFx", "Global", "Pay", "Limited",
+      "Formerly", "known", "os", "Wall", "street", "fmonva/NI",
+      "Unit", "622,", "6Th", "Floor,", "The", "Summit", "Business", "Bay", "-", "Omkar,", "Opp.", "PVR", "Cinema,", "M.V", "Road,", "Chakala,", "Andheri", "(e),",
+      "Mumbai", "-", "400093.",
+      "+91", "7893064879/", "+91", "022", "62709600",
+      "lamparithij@wst.in",
+      "www.wsfx.in"
+  ],
+  "ner": [
+      [0, 1, "PERSON"], 
+      [2, 4, "DESIGNATION"], 
+      [6, 10, "ORGANISATION"], 
+      [11, 15, "DESCRIPTION"], 
+      [16, 32, "ADDRESS"], 
+      [34, 38, "PHONENUMBER"], 
+      [39, 43, "PHONENUMBER"], 
+      [44, 44, "EMAILADDRESS"],
+      [46, 46, "WEBSITE"] 
+  ]
+},
+{
+  "tokenized_text": [
+      "Bank", "of", "Maharashtra",
+      "Nihar", "Ranjan", "Barik",
+      "Chief", "Manager",
+      "Follow", "us", "@mahabank",
+      "Digital", "Banking", "Head", "Office,", "Lokmangal,", "1501,", "Shivajinagar",
+      "Pune", "-", "411:005.",
+      "Tel.",
+      "Mob.",
+      ":", "020", "2561", "4383",
+      ":", "+91", "7507773682",
+      "Email",
+      "cmdbd@mahabank.co.in",
+      "Website:", "www.bankofmaharashtra.in"
+  ],
+  "ner": [
+      [0, 2, "ORGANISATION"], 
+      [3, 5, "PERSON"], 
+      [6, 7, "DESIGNATION"], 
+      [10, 10, "ORGANISATION"],
+      [11, 21, "ADDRESS"], 
+      [24, 26, "PHONENUMBER"],
+      [28, 29, "PHONENUMBER"],
+      [31, 31, "EMAILADDRESS"],
+      [33, 33, "WEBSITE"] 
+  ]
+},
+{
+  
+  "tokenized_text": [
+      "Karur", "Vysya", "Bank", "Smart", "way", "to", "bank",
+      "Harikrishnan", "S",
+      "Chief", "Manager",
+      "The", "Karur", "Vysya", "Bank", "Limited",
+      "Central", "Office", "-", "L.", "T", "Department.",
+      "LNS", "Post,", "Erode", "Road,", "Kanur-639002",
+      "Tel:", "+91", "04324-269552", "(0)",
+      "Mob:", "+91", "9159774522",
+      "E-mat:", "harkrishnans@kvbmail.com",
+      "Webste:", "www.kvb.co.in"
+  ],
+  "ner": [
+      [0, 3, "ORGANISATION"], 
+      [7, 8, "PERSON"], 
+      [9, 10, "DESIGNATION"], 
+      [11, 15, "ORGANISATION"],
+      [16, 22, "ADDRESS"], 
+      [26, 27, "PHONENUMBER"], 
+      [29, 30, "PHONENUMBER"], 
+      [32, 32, "EMAILADDRESS"],
+      [34, 34, "WEBSITE"] 
+  ]
+},
+{
+  "tokenized_text": [
+      "Company:", "Sparkle", "Solutions", "Inc.",
+      "Name:", "John", "Doe",
+      "Title:", "Senior", "Software", "Engineer",
+      "Address:", "123", "Main", "Street,", "Cityville,", "manipal", "india",
+      "Phone:", "+1", "(123)", "456-7890",
+      "Email:", "john.doe@sparklesolutions.com",
+      "Website:", "www.sparklesolutions.com"
+  ],
+  "ner": [
+      [1, 3, "ORGANISATION"], 
+      [5, 6, "PERSON"], 
+      [8, 11, "DESIGNATION"], 
+      [12, 18, "ADDRESS"], 
+      [19, 21, "PHONENUMBER"],
+      [22, 22, "EMAILADDRESS"],
+      [24, 24, "WEBSITE"] 
+  ]
+},
+{
+  "tokenized_text": [
+      "Company:", "Bright", "Ideas", "Co.",
+      "Name:", "Jane", "Smith",
+      "Title:", "Marketing", "Director",
+      "Address:", "456", "Elm", "Street,", "Townsville,", "east coast,", "Canada",
+      "Phone:", "+1", "(234)", "567-8901",
+      "Email:", "jane.smith@brightideasco.com",
+      "Website:", "www.brightideasco.com"
+  ],
+  "ner": [
+      [1, 3, "ORGANISATION"], 
+      [5, 6, "PERSON"],  
+      [8, 9, "DESIGNATION"], 
+      [10, 16, "ADDRESS"], 
+      [17, 19, "PHONENUMBER"], 
+      [20, 20, "EMAILADDRESS"], 
+      [22, 22, "WEBSITE"] 
+  ]
+},
+{
+  "tokenized_text": [
+      "Company:", "Tech", "Innovations", "Ltd.",
+      "Name:", "Alex", "Johnson",
+      "Title:", "Head", "of", "Research", "and", "Development",
+      "Address:", "789", "Oak", "Avenue,", "Tech", "City,", "Kerala", "India",
+      "Phone:", "+1", "(345)", "678-9012",
+      "Email:", "alex.johnson@techinnovations.com",
+      "Website:", "www.techinnovations.com"
+  ],
+  "ner": [
+      [1, 3, "ORGANISATION"], 
+      [5, 6, "PERSON"], 
+      [8, 13, "DESIGNATION"], 
+      [14, 21, "ADDRESS"], 
+      [22, 24, "PHONENUMBER"], 
+      [25, 25, "EMAILADDRESS"],
+      [27, 27, "WEBSITE"] 
+  ]
+},
+{
+  "tokenized_text": [
+      "Company:", "GlobalTech", "Solutions",
+      "Name:", "Sarah", "Lee",
+      "Title:", "Senior", "Project", "Manager",
+      "Address:", "101", "Tech", "Park", "Blvd,", "Citytown,", "States up,", "USA",
+      "Phone:", "+1", "(567)", "890-1234",
+      "Email:", "sarah.lee@globaltechsolutions.com",
+      "Website:", "www.globaltechsolutions.com"
+  ],
+  "ner": [
+      [1, 2, "ORGANISATION"], 
+      [4, 5, "PERSON"], 
+      [7, 10, "DESIGNATION"], 
+      [11, 18, "ADDRESS"], 
+      [19, 21, "PHONENUMBER"], 
+      [22, 22, "EMAILADDRESS"], 
+      [24, 24, "WEBSITE"] 
+  ]
+},
+{
+  "tokenized_text": [
+      "Company:", "Summit", "Consulting", "Group",
+      "Name:", "Michael", "Davis",
+      "Title:", "Financial", "Analyst",
+      "Address:", "456", "Summit", "Street,", "Hilltop,", "State,", "Country",
+      "Phone:", "+1", "(678)", "901-2345",
+      "Email:", "michael.davis@summitconsulting.com",
+      "Website:", "www.summitconsultinggroup.com"
+  ],
+  "ner": [
+      [1, 3, "ORGANISATION"], 
+      [5, 6, "PERSON"], 
+      [8, 9, "DESIGNATION"], 
+      [10, 16, "ADDRESS"], 
+      [17, 19, "PHONENUMBER"],  
+      [20, 20, "EMAILADDRESS"], 
+      [22, 22, "WEBSITE"] 
+  ]
+},
+{
+  "tokenized_text": [
+      "Company:", "Brightstar", "Technologies",
+      "Name:", "Emily", "Rodriguez",
+      "Title:", "Senior", "Marketing", "Manager",
+      "Address:", "789", "Brightstar", "Avenue,", "Sun", "City,", "State,", "Country",
+      "Phone:", "+1", "(234)", "567-8901",
+      "Email:", "emily.rodriguez@brightstartech.com",
+      "Website:", "www.brightstartechnologies.com"
+  ],
+  "ner": [
+      [1, 2, "ORGANISATION"], 
+      [4, 5, "PERSON"], 
+      [7, 10, "DESIGNATION"], 
+      [11, 18, "ADDRESS"], 
+      [19, 21, "PHONENUMBER"],
+      [22, 22, "EMAILADDRESS"],
+      [24, 24, "WEBSITE"] 
+  ]
+},
+{
+  "tokenized_text": [
+      "Company:", "GigaByte", "Solutions", "Corp.",
+      "Name:", "David", "Miller",
+      "Title:", "Lead", "Software", "Engineer",
+      "Address:", "101", "Tech", "Road,", "Innovation", "City,", "State,", "Country",
+      "Phone:", "+1", "(345)", "678-9012",
+      "Email:", "david.miller@gigabyte.com",
+      "Website:", "www.gigabytesolutionscorp.com"
+  ],
+  "ner": [
+      [1, 3, "ORGANISATION"],
+      [5, 6, "PERSON"],
+      [8, 10, "DESIGNATION"],
+      [11, 18, "ADDRESS"],
+      [19, 21, "PHONENUMBER"],
+      [22, 22, "EMAILADDRESS"],
+      [24, 24, "WEBSITE"]
+  ]
+},
+{
+  "tokenized_text": [
+      "Company:", "Innovate", "Tech", "Solutions",
+      "Name:", "Jennifer", "Jones",
+      "Title:", "Senior", "Project", "Manager",
+      "Address:", "456", "Innovation", "Street,", "Tech", "City,", "State,", "Country",
+      "Phone:", "+1", "(456)", "789-0123",
+      "Email:", "jennifer.jones@innovatetech.com",
+      "Website:", "www.innovatetechsolutions.com"
+  ],
+  "ner": [
+      [1, 3, "ORGANISATION"],
+      [5, 6, "PERSON"],
+      [8, 10, "DESIGNATION"],
+      [11, 18, "ADDRESS"],
+      [19, 21, "PHONENUMBER"],
+      [22, 22, "EMAILADDRESS"],
+      [24, 24, "WEBSITE"]
+  ]
+},
+{
+  "tokenized_text": [
+      "Company:", "TechVision", "Innovations", "Ltd.",
+      "Name:", "Andrew", "Clark",
+      "Title:", "Lead", "Data", "Scientist",
+      "Address:", "789", "Data", "Street,", "Innovator", "City,", "State,", "Country",
+      "Phone:", "+1", "(567)", "890-1234",
+      "Email:", "andrew.clark@techvision.com",
+      "Website:", "www.techvisioninnovations.com"
+  ],
+  "ner": [
+      [1, 4, "ORGANISATION"],
+      [5, 6, "PERSON"],
+      [8, 10, "DESIGNATION"],
+      [11, 18, "ADDRESS"],
+      [19, 21, "PHONENUMBER"],
+      [22, 22, "EMAILADDRESS"],
+      [24, 24, "WEBSITE"]
+  ]
+},
+{
+  "tokenized_text": [
+      "Company:", "Innovative", "Tech", "Solutions",
+      "Name:", "Jessica", "Brown",
+      "Title:", "Senior", "Software", "Engineer",
+      "Address:", "123", "Tech", "Street,", "Innovation", "Muthoottu Royal Tower, Kaloor", "Cochin", "Kerala-682017",
+      "Phone:", "+1", "(123)", "456-7890",
+      "Email:", "jessica.brown@innovativetech.com",
+      "Website:", "www.innovativetechsolutions.com"
+  ],
+  "ner": [
+      [1, 3, "ORGANISATION"],
+      [5, 6, "PERSON"],
+      [8, 10, "DESIGNATION"],
+      [11, 18, "ADDRESS"],
+      [19, 21, "PHONENUMBER"],
+      [22, 22, "EMAILADDRESS"],
+      [24, 24, "WEBSITE"]
+  ]
+},
+{
+  "tokenized_text": [
+      "Company:", "Nebula", "Technologies",
+      "Name:", "Elena", "Blackwood",
+      "Title:", "Lead", "UX", "Designer",
+      "Address:", "456", "Stellar", "Avenue,", "Techopolis", "Muthoottu Royal Tower, Kaloor", "Cochin", "Kerala-682017",
+      "Phone:", "+1", "(345)", "678-9012",
+      "Email:", "elena.blackwood@nebulatech.com",
+      "Website:", "www.nebulatechnologies.com"
+  ],
+  "ner": [
+      [1, 2, "ORGANISATION"],
+      [4, 5, "PERSON"],
+      [7, 9, "DESIGNATION"],
+      [10, 17, "ADDRESS"],
+      [18, 20, "PHONENUMBER"],
+      [21, 21, "EMAILADDRESS"],
+      [23, 23, "WEBSITE"]
+  ]
+},
+{
+  "tokenized_text": [
+      "Company:", "Quantum", "Dynamics",
+      "Name:", "Lucas", "Frost",
+      "Title:", "Chief", "Innovation", "Officer",
+      "Address:", "101", "Future", "Street,", "Innovator", "lanscape,", "bereere,", "Canada",
+      "Phone:", "+1", "(456)", "789-0123",
+      "Email:", "lucas.frost@quantumdynamics.com",
+      "Website:", "www.quantumdynamics.com"
+  ],
+  "ner": [
+      [1, 2, "ORGANISATION"],
+      [4, 5, "PERSON"],
+      [7, 9, "DESIGNATION"],
+      [10, 17, "ADDRESS"],
+      [18, 20, "PHONENUMBER"],
+      [21, 21, "EMAILADDRESS"],
+      [23, 23, "WEBSITE"]
+  ]
+},
+{
+  "tokenized_text": [
+      "Company:", "InnoVista", "Enterprises",
+      "Name:", "Sophia", "Johnson",
+      "Title:", "Creative", "Director",
+      "Address:", "789", "Vibrant", "Street,", "Innovation", "Metropolis,", "New", "Horizon", "USA",
+      "Phone:", "+1", "(234)", "567-8901",
+      "Email:", "sophia.johnson@innovista.com",
+      "Website:", "www.innovistaenterprises.com"
+  ],
+  "ner": [
+      [1, 2, "ORGANISATION"],
+      [4, 5, "PERSON"],
+      [7, 8, "DESIGNATION"],
+      [9, 16, "ADDRESS"],
+      [17, 19, "PHONENUMBER"],
+      [20, 20, "EMAILADDRESS"],
+      [22, 22, "WEBSITE"]
+  ]
+},
+{
+  "tokenized_text": [
+      "Company:", "Elysium", "Innovations",
+      "Name:", "Gabriel", "Stone",
+      "Title:", "Chief", "Visionary", "Officer",
+      "Address:", "123", "Dreamer", "Lane,", "Imagination", "City,", "Wonderland", "India",
+      "Phone:", "+1", "(789)", "012-3456",
+      "Email:", "gabriel.stone@elysiuminnovations.com",
+      "Website:", "www.elysiuminnovations.com"
+  ],
+  "ner": [
+      [1, 2, "ORGANISATION"],
+      [4, 5, "PERSON"],
+      [7, 9, "DESIGNATION"],
+      [10, 12, "ADDRESS"], 
+      [13, 14, "ADDRESS"], 
+      [15, 16, "ADDRESS"], 
+      [17, 17, "ADDRESS"], 
+      [18, 29, "ADDRESS"], 
+      [30, 32, "ADDRESS"], 
+      [19, 21, "PHONENUMBER"],
+      [22, 22, "PHONENUMBER"],
+      [23, 23, "PHONENUMBER"],
+      [24, 32, "EMAILADDRESS"],
+      [34, 34, "WEBSITE"]
+  ]
+}
 
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ]
